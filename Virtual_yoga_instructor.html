@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Virtual Yoga Instructor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="heading">
+            <h1>Welcome to Master Yogi</h1>
+            <img v-bind:src="image" :alt="alt_text" :height="h" :width="w">
+
+        </div>
+        <div class="pose-container">
+            <div class="pose-name">
+                <h1>
+                    <a :href="link[0]" target="_blank">Surya Namaskaras</a>
+                </h1>
+            </div>
+            <div class="pose-list">
+                <ul v-for="pose in poses">
+                    <li @mouseover="changeImage(pose.image)">Pose {{pose.number}}</li>
+                </ul>
+            </div>
+            <div class="pose-image">
+                <img :src="image" :alt="alt_text" :height="h" :width="w">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.heading h1
+{
+    text-align: center;
+    color: #a52a2a;
+}
+.pose-container
+{
+    margin: 5%;
+    border: brown 3px solid;
+}
+.pose-name h1
+{
+/* float:right; */
+text-align: center;
+}
