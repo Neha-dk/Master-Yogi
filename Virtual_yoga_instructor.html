@@ -20,7 +20,7 @@
                 </h1>
             </div>
             <div class="pose-list">
-                <ul v-for="pose in poses">
+                <ul v-for="pose in poses" :key=pose.number>
                     <li @mouseover="changeImage(pose.image)">Pose {{pose.number}}</li>
                 </ul>
             </div>

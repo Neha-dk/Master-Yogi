@@ -51,6 +51,7 @@ var pose = new Vue(
             methods: {
                 changeImage(pose_name){
                     this.image = pose_name;
+                    return pose_name;
                 }
             }
 
